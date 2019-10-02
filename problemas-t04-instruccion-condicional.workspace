@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="problemas-t04-instruccion-condicional" Database="" Version="10.0.0">
+  <Project Name="01-bisesto-juliano" Path="bisesto-juliano/bisesto-juliano.project" Active="No"/>
+  <Project Name="02-bisiesto-gregoriano" Path="bisiesto-gregoriano/bisiesto-gregoriano.project" Active="No"/>
+  <Project Name="03-matriculas-de-honor" Path="matriculas-de-honor/matriculas-de-honor.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="01-bisesto-juliano" ConfigName="Debug"/>
+      <Project Name="02-bisiesto-gregoriano" ConfigName="Debug"/>
+      <Project Name="03-matriculas-de-honor" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="01-bisesto-juliano" ConfigName="Release"/>
+      <Project Name="02-bisiesto-gregoriano" ConfigName="Release"/>
+      <Project Name="03-matriculas-de-honor" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
