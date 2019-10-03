@@ -98,10 +98,10 @@ int main() {
     cin >> agno;
 
     if (esBisiesto(agno)) {
-        cout << "El año " << agno << " es bisiesto" << endl;
+        cout << "El año " << agno << " es bisiesto." << endl;
     }
     else {
-        cout << "El año " << agno << " no es bisiesto" << endl;
+        cout << "El año " << agno << " no es bisiesto." << endl;
     }
 
     return 0;

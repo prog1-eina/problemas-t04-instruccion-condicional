@@ -18,10 +18,10 @@ int main() {
     cin >> agno;
 
     if (agno % 4 == 0) {
-        cout << "El año " << agno << " es bisiesto" << endl;
+        cout << "El año " << agno << " es bisiesto." << endl;
     }
     else {
-        cout << "El año " << agno << " no es bisiesto" << endl;
+        cout << "El año " << agno << " no es bisiesto." << endl;
     }
     return 0;
 }
