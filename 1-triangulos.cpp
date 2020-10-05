@@ -10,7 +10,6 @@
 using namespace std;
 
 
-
 /*
  * Programa interactivo que pide al usuario que introduzca, ordenadas de menor
  * a mayor, las longitudes de los tres lados de un triángulo. A continuación
@@ -24,14 +23,15 @@ int main() {
     cin >> a >> b >> c;
 
     if (0 < a && a <= b && b <= c) {
+        cout << "El triángulo es ";
         if (a == b && b == c) {
-            cout << "El triángulo es equilátero." << endl;
+            cout << "equilátero." << endl;
         }    
         else if (a == b || b == c) {
-            cout << "El triángulo es isósceles." << endl;
+            cout << "isósceles." << endl;
         }
         else {
-            cout << "El triángulo es escaleno." << endl;
+            cout << "escaleno." << endl;
         }
         return 0;
     }
