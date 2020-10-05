@@ -23,19 +23,30 @@ int main() {
     cin >> a >> b >> c;
 
     if (0 < a && a <= b && b <= c) {
+        // Los datos introducidos por el usario están ordenados de menor a mayor
+        // y son positivos.
+
         cout << "El triángulo es ";
         if (a == b && b == c) {
+            // a == b && b == c implica que a == c: los tres lados son iguales.
             cout << "equilátero." << endl;
         }    
         else if (a == b || b == c) {
+            // Dos lados son iguales. Como no se cumplía a == b && b == c 
+            // (estamos en el «else» de esa condición), el tercer lado es 
+            // desigual.
             cout << "isósceles." << endl;
         }
         else {
+            // Los tres lados son distintos
             cout << "escaleno." << endl;
         }
         return 0;
     }
     else {
+        // Los datos introducidos por el usario o no están ordenados de menor a 
+        // mayor o no son todos positivos
+
         cout << "Los datos no están ordenados o alguno es menor que cero."
              << endl;
         return 1;
