@@ -1,7 +1,8 @@
 /*
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 2 de octubre de 2019
- * Resumen: Programa interactivo que informa de si un año es o no bisiesto (de acuerdo con el calendario juliano).
+ * Resumen: Programa interactivo que informa de si un año es o no bisiesto (de 
+ *          acuerdo con el calendario juliano).
  *          3.ª clase de problemas de Programación 1
  */
 
@@ -9,8 +10,9 @@
 using namespace std;
 
 /*
- * Programa que pide al usuario un año y escribe en la pantalla un  mensaje indicando si es bisiesto o no, de acuerdo
- * con las reglas del calendario juliano.
+ * Programa que pide al usuario un año y escribe en la pantalla un mensaje 
+ * indicando si es bisiesto o no, de acuerdo con las reglas del calendario
+ * juliano.
  */
 int main() {
     cout << "Escriba un año: ";
