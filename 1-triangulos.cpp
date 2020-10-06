@@ -45,7 +45,7 @@ int main() {
     else {
         // Los datos introducidos por el usario no son estrictamente positivos.
 
-        cout << "Algún dato es menor que cero." << endl;
+        cout << "Algún dato no es positivo." << endl;
         return 1;
     }
 }
