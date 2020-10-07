@@ -40,12 +40,16 @@ int main() {
             // Los tres lados son distintos
             cout << "escaleno." << endl;
         }
+
+        // La función main devuelve 0, indicando al SO que todo ha ido bien.
         return 0;
     }
     else {
         // Los datos introducidos por el usario no son estrictamente positivos.
-
         cout << "Algún dato no es positivo." << endl;
+
+        // La funcióln main devuelve un valor positivo, 
+        // indicando al sistema operativo que ha habido algún error.
         return 1;
     }
 }
