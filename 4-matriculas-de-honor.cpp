@@ -28,12 +28,14 @@ const double TASA_MH = 0.05;
  * Devuelve el número máximo de matriculas de honor que pueden otorgarse en un 
  * grupo de una asignatura que tiene «matriculados» estudiantes matriculados.
  */
-int maximoMatriculasHonor(unsigned int matriculados) {
+unsigned int maximoMatriculasHonor(unsigned int matriculados) {
     if (matriculados < UMBRAL_MATRICULADOS_MH) {
         return 1;
     }
     else {
-        return int(matriculados * TASA_MH);
+        // La expresión es de tipo «double», pero se convierte impícitamente a
+        // «unsigned int», porque este último es el tipo devuelto por la función.
+        return matriculados * TASA_MH;
     }
 }
 
