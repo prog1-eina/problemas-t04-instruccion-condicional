@@ -101,8 +101,9 @@ bool esBisiesto(unsigned int agno) {
 
 
 /*
- * Programa que pide al usuario un año y escribe en la pantalla un  mensaje indicando si es bisiesto o no, de acuerdo
- * con las reglas del calendario gregoriano.
+ * Programa que pide al usuario un año y escribe en la pantalla un  mensaje 
+ * indicando si es bisiesto o no, de acuerdo con las reglas del calendario
+ * gregoriano.
  */
 int main() {
     cout << "Escriba un año: " << flush;
