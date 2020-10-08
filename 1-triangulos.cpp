@@ -11,8 +11,8 @@ using namespace std;
 
 
 /*
- * Programa interactivo que pide al usuario que introduzca, ordenadas de menor
- * a mayor, las longitudes de los tres lados de un triángulo. A continuación
+ * Programa interactivo que pide al usuario que introduzca
+ * las longitudes de los tres lados de un triángulo. A continuación
  * escribe en la pantalla si dicho triángulo es equilátero, isósceles o 
  * escaleno.
  */
@@ -47,7 +47,7 @@ int main() {
         // Los datos introducidos por el usario no son estrictamente positivos.
         cout << "Algún dato no es positivo." << endl;
 
-        // La funcióln main devuelve un valor positivo, 
+        // La función main devuelve un valor positivo, 
         // indicando al sistema operativo que ha habido algún error.
         return 1;
     }
