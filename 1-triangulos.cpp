@@ -17,8 +17,7 @@ using namespace std;
  * escaleno.
  */
 int main() {
-    cout << "Escriba las longitudes de los lados de un triángulo "
-         << "(ordenadas de menor a mayor): ";
+    cout << "Escriba las longitudes de los lados de un triángulo ";
     double a, b, c;
     cin >> a >> b >> c;
 
