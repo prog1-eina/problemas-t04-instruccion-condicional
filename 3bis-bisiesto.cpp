@@ -1,0 +1,53 @@
+/*
+ * Autores: Javier Martínez, Miguel Ángel Latre, Simona Bernardi
+ * Última revisión: 9 de octubre de 2020
+ * Resumen: Programa interactivo que informa de si un año es o no bisiesto.
+ */
+
+#include <iostream>
+using namespace std;
+
+
+const unsigned int AGNO_CAMBIO_CALENDARIO=1582;
+
+/*
+ * Devuelve true si y solo si el año «agno» es bisiesto de acuerdo con las
+ * reglas del calendario gregoriano.
+ * El valor del parámetro «agno» debe ser posterior a 1582.
+ */
+bool esBisiestoGregoriano(unsigned int agno) {
+    return (agno % 400 == 0) || (agno % 4 == 0 && agno % 100 != 0);
+}
+
+
+/*
+ * Devuelve true si y solo si el año «agno» es bisiesto de acuerdo con las
+ * reglas del calendario juliano.
+ * El valor del parámetro «agno» debe ser no posterior a 1582.
+ */
+bool esBisiestoJuliano(unsigned int agno) {
+    return  (agno % 4 == 0);
+}
+
+
+/*
+ * Programa que pide al usuario un año y escribe en la pantalla un  mensaje 
+ * indicando si es bisiesto o no.
+ */
+int main() {
+    cout << "Escriba un año: " << flush;
+    unsigned int agno;
+    cin >> agno;
+
+    bool bisiestoGregoriano = (agno > AGNO_CAMBIO_CALENDARIO) && esBisiestoGregoriano(agno);
+    bool bisiestoJuliano = (agno <= AGNO_CAMBIO_CALENDARIO) && esBisiestoJuliano(agno);
+    
+    if (bisiestoGregoriano || bisiestoJuliano) {
+        cout << "El año " << agno << " es bisiesto." << endl;
+    }
+    else {
+        cout << "El año " << agno << " no es bisiesto." << endl;
+    }
+
+    return 0;
+}
