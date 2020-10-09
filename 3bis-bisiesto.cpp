@@ -7,8 +7,11 @@
 #include <iostream>
 using namespace std;
 
-
-const unsigned int AGNO_CAMBIO_CALENDARIO=1582;
+/*
+ * Año en el que se produjo el cambio del calendario juliano al gregoriano
+ * en España, Italia, Portugal y la zona católica de Polonia.
+ */
+const unsigned int AGNO_CAMBIO_CALENDARIO = 1582;
 
 /*
  * Devuelve true si y solo si el año «agno» es bisiesto de acuerdo con las
@@ -31,7 +34,20 @@ bool esBisiestoJuliano(unsigned int agno) {
 
 
 /*
- * Programa que pide al usuario un año y escribe en la pantalla un  mensaje 
+ * Devuelve true si y solo si el año «agno» es o fue bisiesto en España, Italia,
+ * Portugal.
+ */
+bool esBisiesto(unsigned int agno) {
+    if (agno <= AGNO_CAMBIO_CALENDARIO) {
+        return esBisiestoJuliano(agno);
+    }
+    else {
+        return esBisiestoGregoriano(agno);
+    }
+}
+
+/*
+ * Programa que pide al usuario un año y escribe en la pantalla un mensaje 
  * indicando si es bisiesto o no.
  */
 int main() {
@@ -39,10 +55,7 @@ int main() {
     unsigned int agno;
     cin >> agno;
 
-    bool bisiestoGregoriano = (agno > AGNO_CAMBIO_CALENDARIO) && esBisiestoGregoriano(agno);
-    bool bisiestoJuliano = (agno <= AGNO_CAMBIO_CALENDARIO) && esBisiestoJuliano(agno);
-    
-    if (bisiestoGregoriano || bisiestoJuliano) {
+    if (esBisiesto(agno)) {
         cout << "El año " << agno << " es bisiesto." << endl;
     }
     else {
