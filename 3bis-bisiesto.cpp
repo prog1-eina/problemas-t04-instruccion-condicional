@@ -11,14 +11,14 @@ using namespace std;
  * Año en el que se produjo el cambio del calendario juliano al gregoriano
  * en España, Italia, Portugal y la zona católica de Polonia.
  */
-const unsigned int AGNO_CAMBIO_CALENDARIO = 1582;
+const unsigned AGNO_CAMBIO_CALENDARIO = 1582;
 
 /*
  * Devuelve true si y solo si el año «agno» es bisiesto de acuerdo con las
  * reglas del calendario gregoriano.
  * El valor del parámetro «agno» debe ser posterior a 1582.
  */
-bool esBisiestoGregoriano(unsigned int agno) {
+bool esBisiestoGregoriano(unsigned agno) {
     return (agno % 400 == 0) || (agno % 4 == 0 && agno % 100 != 0);
 }
 
@@ -28,7 +28,7 @@ bool esBisiestoGregoriano(unsigned int agno) {
  * reglas del calendario juliano.
  * El valor del parámetro «agno» debe ser no posterior a 1582.
  */
-bool esBisiestoJuliano(unsigned int agno) {
+bool esBisiestoJuliano(unsigned agno) {
     return  (agno % 4 == 0);
 }
 
@@ -37,7 +37,7 @@ bool esBisiestoJuliano(unsigned int agno) {
  * Devuelve true si y solo si el año «agno» es o fue bisiesto en España, Italia,
  * Portugal.
  */
-bool esBisiesto(unsigned int agno) {
+bool esBisiesto(unsigned agno) {
     if (agno <= AGNO_CAMBIO_CALENDARIO) {
         return esBisiestoJuliano(agno);
     }
@@ -52,7 +52,7 @@ bool esBisiesto(unsigned int agno) {
  */
 int main() {
     cout << "Escriba un año: " << flush;
-    unsigned int agno;
+    unsigned agno;
     cin >> agno;
 
     if (esBisiesto(agno)) {

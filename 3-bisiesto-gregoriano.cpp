@@ -17,7 +17,7 @@ using namespace std;
  * El valor del parámetro «agno» debe ser posterior a 1582.
  * Nota: Primera versión de la función presentada en la clase de problemas.
  */
-bool esBisiesto1(unsigned int agno) {
+bool esBisiesto1(unsigned agno) {
     if (agno % 400 == 0) {
         return true;
     }
@@ -43,7 +43,7 @@ bool esBisiesto1(unsigned int agno) {
  * El valor del parámetro «agno» debe ser posterior a 1582.
  * Nota: Segunda versión de la función presentada en la clase de problemas.
  */
-bool esBisiesto2(unsigned int agno) {
+bool esBisiesto2(unsigned agno) {
     if (agno % 400 == 0) {
         return true;
     }
@@ -65,7 +65,7 @@ bool esBisiesto2(unsigned int agno) {
  * El valor del parámetro «agno» debe ser posterior a 1582.
  * Nota: Tercera versión de la función presentada en la clase de problemas.
  */
-bool esBisiesto3(unsigned int agno) {
+bool esBisiesto3(unsigned agno) {
     if (agno % 400 == 0 || (agno % 4 == 0 && agno % 100 != 0)) {
         return true;
     }
@@ -81,7 +81,7 @@ bool esBisiesto3(unsigned int agno) {
  * El valor del parámetro «agno» debe ser posterior a 1582.
  * Nota: Cuarta versión de la función presentada en la clase de problemas.
  */
-bool esBisiesto4(unsigned int agno) {
+bool esBisiesto4(unsigned agno) {
     return agno % 400 == 0 || (agno % 4 == 0 && agno % 100 != 0);
 }
 
@@ -92,7 +92,7 @@ bool esBisiesto4(unsigned int agno) {
  * El valor del parámetro «agno» debe ser posterior a 1582.
  * Nota: Quinta y última versión de la función presentada en la clase de problemas.
  */
-bool esBisiesto(unsigned int agno) {
+bool esBisiesto(unsigned agno) {
     bool multiplo4   = (agno %   4 == 0);
     bool multiplo100 = (agno % 100 == 0);
     bool multiplo400 = (agno % 400 == 0);
@@ -107,7 +107,7 @@ bool esBisiesto(unsigned int agno) {
  */
 int main() {
     cout << "Escriba un año: " << flush;
-    unsigned int agno;
+    unsigned agno;
     cin >> agno;
 
     if (esBisiesto(agno)) {

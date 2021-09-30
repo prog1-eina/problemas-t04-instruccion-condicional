@@ -14,7 +14,7 @@ using namespace std;
  * Valor del número de estudiantes por debajo del cual se otorga al menos una 
  * matrícula de honor
  */
-const unsigned int UMBRAL_MATRICULADOS_MH = 20;
+const unsigned UMBRAL_MATRICULADOS_MH = 20;
 
 
 /*
@@ -28,13 +28,13 @@ const double TASA_MH = 0.05;
  * Devuelve el número máximo de matriculas de honor que pueden otorgarse en un 
  * grupo de una asignatura que tiene «matriculados» estudiantes matriculados.
  */
-unsigned int maximoMatriculasHonor(unsigned int matriculados) {
+unsigned maximoMatriculasHonor(unsigned matriculados) {
     if (matriculados < UMBRAL_MATRICULADOS_MH) {
         return 1;
     }
     else {
         // La expresión es de tipo «double», pero se convierte impícitamente a
-        // «unsigned int», porque este último es el tipo devuelto por la función.
+        // «unsigned», porque este último es el tipo devuelto por la función.
         return matriculados * TASA_MH;
     }
 }
