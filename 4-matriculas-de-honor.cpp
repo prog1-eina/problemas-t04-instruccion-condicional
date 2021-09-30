@@ -33,7 +33,7 @@ unsigned maximoMatriculasHonor(unsigned matriculados) {
         return 1;
     }
     else {
-        // La expresión es de tipo «double», pero se convierte impícitamente a
+        // La expresión es de tipo «double», pero se convierte implícitamente a
         // «unsigned», porque este último es el tipo devuelto por la función.
         return matriculados * TASA_MH;
     }
