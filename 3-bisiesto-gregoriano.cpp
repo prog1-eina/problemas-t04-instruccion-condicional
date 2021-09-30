@@ -1,12 +1,12 @@
-/*
+/*******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 2 de octubre de 2019
+ * Última revisión: 30 de septiembre de 2020
  * Resumen: Programa interactivo que informa de si un año es o no bisiesto, de
  *          acuerdo con el calendario gregoriano.
  *          Incluye varias versiones de la función «esBisiesto». Las que no se
  *          utilizan en la función «main» son «esBisiesto1» a «esBisiesto4».
- *          3.ª clase de problemas de Programación 1.
- */
+ *          Problemas de Programación 1 sobre composición condicional (tema 4).
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 

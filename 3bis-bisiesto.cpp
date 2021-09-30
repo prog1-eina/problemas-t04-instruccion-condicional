@@ -1,9 +1,9 @@
-/*
+/*******************************************************************************
  * Autores: Javier Martínez, Miguel Ángel Latre, Simona Bernardi
- * Última revisión: 9 de octubre de 2020
+ * Última revisión: 30 de septiembre de 2020
  * Resumen: Programa interactivo que informa de si un año es o no bisiesto.
- */
-
+ *          Problemas de Programación 1 sobre composición condicional (tema 4).
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 

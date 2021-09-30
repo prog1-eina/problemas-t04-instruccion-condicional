@@ -1,11 +1,11 @@
-/*
+/*******************************************************************************
  * Autores: Miguel Ángel Latre
- * Última revisión: 2 de octubre de 2019
+ * Última revisión: 30 de septiembre de 2020
  * Resumen: Función que, dado el número de matriculados en una asignatura y en 
  *          un mismo grupo docente, devuelve el número máximo de matrículas de
  *          honor que pueden otorgarse.
- *          3.ª clase de problemas de Programación 1
- */
+ *          Problemas de Programación 1 sobre composición condicional (tema 4).
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 

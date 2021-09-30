@@ -1,11 +1,11 @@
-/*
+/*******************************************************************************
  * Autor: Miguel Ángel Latre
  * Última revisión: 5 de octubre de 2020
  * Resumen: Programa interactivo que, dadas las longitudes de los tres lados de 
  *          un triángulo, escribe en la pantalla si dicho triángulo es 
  *          equilátero, isósceles o escaleno.
- *          3.ª clase de problemas de Programación 1.
- */
+ *          Problemas de Programación 1 sobre composición condicional (tema 4).
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 
