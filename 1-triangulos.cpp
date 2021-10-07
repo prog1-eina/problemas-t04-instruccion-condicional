@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Autor: Miguel Ángel Latre
- * Última revisión: 5 de octubre de 2020
+ * Última revisión: 7 de octubre de 2020
  * Resumen: Programa interactivo que, dadas las longitudes de los tres lados de 
  *          un triángulo, escribe en la pantalla si dicho triángulo es 
  *          equilátero, isósceles o escaleno.
@@ -12,12 +12,14 @@ using namespace std;
 
 /*
  * Programa interactivo que pide al usuario que introduzca
- * las longitudes de los tres lados de un triángulo. A continuación
- * escribe en la pantalla si dicho triángulo es equilátero, isósceles o 
- * escaleno.
+ * las longitudes de los tres lados de un triángulo. A continuación, si los tres
+ * lados son positivos, escribe en la pantalla si dicho triángulo es equilátero,
+ * isósceles o escaleno, sin preocuparse de si las longitues pueden formar
+ * realmente un triángulo en la geometría euclidiana. En caso contrario, indica
+ * que algún lado no es positivo.
  */
 int main() {
-    cout << "Escriba las longitudes de los lados de un triángulo ";
+    cout << "Escriba las longitudes de los lados de un triángulo: ";
     double a, b, c;
     cin >> a >> b >> c;
 
