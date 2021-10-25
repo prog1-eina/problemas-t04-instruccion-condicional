@@ -106,7 +106,7 @@ bool esBisiesto(unsigned agno) {
  * gregoriano.
  */
 int main() {
-    cout << "Escriba un año: " << flush;
+    cout << "Escriba un año: ";
     unsigned agno;
     cin >> agno;
 
