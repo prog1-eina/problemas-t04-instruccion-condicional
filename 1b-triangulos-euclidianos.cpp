@@ -1,11 +1,11 @@
 /*******************************************************************************
  * Autor: Miguel Ángel Latre
- * Última revisión: 7 de octubre de 2020
+ * Última revisión: 22 de septiembre de 2022
  * Resumen: Programa interactivo que, dadas las longitudes de los tres lados de 
  *          un triángulo, escribe en la pantalla si dicho triángulo es 
  *          equilátero, isósceles o escaleno.
  *          Versión mejorada del programa anterior, en la que nos preocupamos de
- *          que las longitues pueden formar realmente un triángulo en la
+ *          que las longitudes pueden formar realmente un triángulo en la
  *          geometría euclidiana (la longitud del lado mayor es estrictamente
  *          menor que la suma de los otros dos).
  *          Problemas de Programación 1 sobre composición condicional (tema 4).
@@ -45,7 +45,7 @@ int main() {
     cin >> a >> b >> c;
 
     if (a > 0 && b > 0 && c > 0) {
-        // Los datos introducidos por el usario son estrictamente positivos.
+        // Los datos introducidos por el usuario son estrictamente positivos.
 
         if (existeTriangulo(a, b, c)) {
             cout << "El triángulo es ";
@@ -77,7 +77,7 @@ int main() {
         }
     }
     else {
-        // Los datos introducidos por el usario no son estrictamente positivos.
+        // Los datos introducidos por el usuario no son estrictamente positivos.
         cout << "Algún dato no es positivo." << endl;
 
         // La función main devuelve un valor positivo, 

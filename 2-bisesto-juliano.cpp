@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 2 de octubre de 2019
+ * Última revisión: 22 de septiembre de 2022
  * Resumen: Programa interactivo que informa de si un año es o no bisiesto (de 
  *          acuerdo con el calendario juliano).
  *          3.ª clase de problemas de Programación 1
@@ -24,5 +24,4 @@ int main() {
     else {
         cout << "El año " << agno << " no es bisiesto." << endl;
     }
-    return 0;
 }
