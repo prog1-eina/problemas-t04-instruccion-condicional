@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Autor: Miguel Ángel Latre
- * Última revisión: 22 de septiembre de 2022
+ * Última revisión: 20-9-2023
  * Resumen: Programa interactivo que, dadas las longitudes de los tres lados de 
  *          un triángulo, escribe en la pantalla si dicho triángulo es 
  *          equilátero, isósceles o escaleno.
@@ -30,19 +30,16 @@ int main() {
         if (a == b && b == c) {
             // a == b && b == c implica que a == c: los tres lados son iguales.
             cout << "equilátero." << endl;
-        }    
-        else if (a == b || b == c || a == c) {
+        } else if (a == b || b == c || a == c) {
             // Dos lados son iguales. Como no se cumple a == b && b == c 
             // (estamos en el «else» de esa condición), el tercer lado es 
             // desigual.
             cout << "isósceles." << endl;
-        }
-        else {
+        } else {
             // Los tres lados son distintos
             cout << "escaleno." << endl;
         }
-    }
-    else {
+    } else {
         // Los datos introducidos por el usuario no son estrictamente positivos.
         cout << "Algún dato no es positivo." << endl;
     }

@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 30-9-2022
+ * Última revisión: 20-9-2023
  * Resumen: Programa interactivo que informa de si un año es o no bisiesto, de
  *          acuerdo con el calendario gregoriano.
  *          Se incluyen varias versiones del mismo problema.
@@ -26,8 +26,7 @@ int main() {
 
     if (multiplo400 || (multiplo4 && !multiplo100)) {
         cout << "El año " << agno << " es bisiesto." << endl;
-    }
-    else {
+    } else {
         cout << "El año " << agno << " no es bisiesto." << endl;
     }
 
