@@ -1,4 +1,4 @@
-/*******************************************************************************
+/******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 20-9-2023
  * Resumen: Programa interactivo que informa de si un año es o no bisiesto, de
@@ -6,7 +6,7 @@
  *          Se incluyen varias versiones del mismo problema.
  *          Esta es la más simple.
  *          Problemas de Programación 1 sobre composición condicional (tema 4).
- ******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 

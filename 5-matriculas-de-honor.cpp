@@ -1,11 +1,11 @@
-/*******************************************************************************
+/******************************************************************************
  * Autores: Miguel Ángel Latre
  * Última revisión: 30 de septiembre de 2020
  * Resumen: Programa que, dado el número de matriculados en un grupo docente de
  *          una asignatura, escribe en la pantalla el número máximo de
  *          matrículas de honor que pueden otorgarse en dicho grupo.
  *          Problemas de Programación 1 sobre composición condicional (tema 4).
- ******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
@@ -34,10 +34,10 @@ int main() {
     unsigned matriculados;
     cin >> matriculados;
 
-    // Inicialización de «maximo» con el número de matriculas a aplicar en el caso
-    // general. La expresión de inicialización es de tipo «double», pero se convierte
-    // implícitamente a «unsigned» (truncándolo), porque este último es el tipo de la
-    // variable.
+    // Inicialización de «maximo» con el número de matriculas a aplicar en el
+    // caso general. La expresión de inicialización es de tipo «double», pero
+    // se convierte implícitamente a «unsigned» (truncándolo), porque este
+    // último es el tipo de la variable.
     unsigned maximo = matriculados * TASA_MH;
 
     // Gestión del caso particular cuando hay menos de 20 matriculados.
