@@ -1,6 +1,5 @@
 /******************************************************************************
  * Autor: Miguel Ángel Latre
- * Última revisión: 20-9-2023
  * Resumen: Programa interactivo que, dadas las longitudes de los tres lados de
  *          un triángulo, escribe en la pantalla si dicho triángulo es 
  *          equilátero, isósceles o escaleno.

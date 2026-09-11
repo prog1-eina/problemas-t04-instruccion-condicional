@@ -1,6 +1,5 @@
 /******************************************************************************
  * Autores: Miguel Ángel Latre
- * Última revisión: 30 de septiembre de 2020
  * Resumen: Programa que, dado el número de matriculados en un grupo docente de
  *          una asignatura, escribe en la pantalla el número máximo de
  *          matrículas de honor que pueden otorgarse en dicho grupo.
