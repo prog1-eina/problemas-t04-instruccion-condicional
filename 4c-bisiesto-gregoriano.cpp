@@ -28,6 +28,4 @@ int main() {
     } else {
         cout << "El año " << agno << " no es bisiesto." << endl;
     }
-
-    return 0;
 }
